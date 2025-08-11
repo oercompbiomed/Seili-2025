@@ -38,8 +38,8 @@ If you are not already familiar with the STRING database, we highly recommend th
 ### 5. Introduction to biomacromolecular structure
 Please take this online course: https://www.ebi.ac.uk/training/online/courses/biomacromolecular-structures/
 
-**Introduction to AlphaFold3 for predicting 3D structures for proteinse**<br>
-Please take the Introductory guide to AlphaFold's strengths and limitations of this online course: https://www.ebi.ac.uk/training/online/courses/alphafold/an-introductory-guide-to-its-strengths-and-limitations/. The course is comprehensive but only the introduction is compulsory and, thereafter, please [Test your knowledge](https://www.ebi.ac.uk/training/online/courses/alphafold/an-introductory-guide-to-its-strengths-and-limitations/test-your-knowledge/). 
+**Introduction to AlphaFold3 for predicting 3D structures for proteins**<br>
+Please take the _Introductory guide to AlphaFold's strengths and limitations_ of this online course: https://www.ebi.ac.uk/training/online/courses/alphafold/an-introductory-guide-to-its-strengths-and-limitations/. The course is comprehensive but only the introduction is compulsory and, thereafter, please [Test your knowledge](https://www.ebi.ac.uk/training/online/courses/alphafold/an-introductory-guide-to-its-strengths-and-limitations/test-your-knowledge/). 
 
 ### 6. Install Cytoscape and PyMOL
 
