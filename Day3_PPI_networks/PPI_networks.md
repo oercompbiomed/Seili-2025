@@ -35,7 +35,7 @@ Go to the menu **File → Import → Network from Public Databases**. In the imp
 Unless the name(s) you entered give unambiguous matches, a disambiguation dialog will be shown next. It lists all the matches that the stringApp finds for each ambiguous query term and selects the first one for each. Select the right one(s) you meant and continue by pressing the **Import** button.
 
 
-_<u>Questions:</u>_  
+_<ins>Questions:</ins>_  
 _How many nodes are in the resulting network?_  
 _How does this compare to the maximum number of interactors you specified?_  
 _What types of information do the **Node** and **Edge Table** provide?_  
@@ -44,7 +44,7 @@ _What types of information do the **Node** and **Edge Table** provide?_
 
 Go to the menu **File → Import → Network from Public Databases**. In the import dialog, choose **STITCH: protein/compound query** as **Data Source** and type your favorite compound into the **Enter protein or compound names or identifiers** field (e.g. dioxin). You can select the organism and number of additional interactors just like for the protein query above, and the disambiguation dialog also works the same way.
 
-_<u>Question:</u>_  
+_<ins>Question:</ins>_  
 _How is this network different from the protein-only network with respect to node types and the information provided in the **Node Table**?_
 
 ### 1.3 Disease queries
@@ -53,14 +53,14 @@ Go to the menu **File → Import → Network from Public Databases**. In the imp
 
 The next dialog shows all the matches that the stringApp finds for your disease query and selects the first one. Make sure to select the intended disease before pressing the **Import** button to continue.
 
-_<u>Question:</u>_  
+_<ins>Question:</ins>_  
 _Which additional attribute column do you get in the **Node Table** for a disease query compared to a protein query? Hint: check the last column._
 
 ### 1.4 PubMed queries
 
 Go to the menu **File → Import → Network from Public Databases**. In the import dialog, choose **STRING: PubMed query** as **Data Source** and type query representing a topic of interest into the **PubMed Query** field (e.g. dioxin poisoning). You can use any query that would work on the PubMed website, but it should obviously a topic with related genes or proteins. The stringApp will query PubMed for the abstracts, find the top-N proteins (by default 100) associated with these abstracts, and retrieve a STRING network for them.
 
-_<u>Question:</u>_  
+_<ins>Question:</ins>_  
 _Which attribute column do you get in the **Node Table** for a PubMed query compared to a disease query? Hint: check the last columns._
 
 ### 1.5 Using the Cytoscape Search bar
@@ -81,13 +81,13 @@ Go to the menu **File → Import → Network from Public Databases**. In the imp
 
 Next, the disambiguation dialog might show all query terms that cannot be matched to a unique STRING protein, with the first matching STRING protein for each query term automatically selected. This default is fine for this exercise; click the **Import** button to continue. Check that **View → Always Show Graphics Details** for a detailed view of the network.
 
-_<u>Questions:</u>_  
+_<ins>Questions:</ins>_  
 _How many nodes and edges are there in the resulting network?_  
 _Do most of the proteins form a connected network? Why?_
 
 Cytoscape provides several layout options under the **Layout** menu. Try the **Degree Sorted Circle Layout** and the **yFiles Organic Layout**. Check also one of the Cytoscape force-directed layouts, **Prefuse Force Directed Layout** or **Edge-weighted Spring Embedded Layout** with the attribute ‘score’ as edge weight (this is the combined STRING interaction score).
 
-_<u>Question:</u>_  
+_<ins>Question:</ins>_  
 _Do any of the suggested layouts help you to recognize patterns in the network? In which way?_
 
 ### 2.2 Discrete color mapping
@@ -98,12 +98,12 @@ Select **Style** from the side menu in the left panel (it is between **Network**
 
 To color the proteins in a given target family, first click the field to the **right** of an attribute value, i.e. **GPCR** or **Ion channel**, then click the ⋯ button and choose a color from the color selection dialog. You can also set the default color for all nodes that do not have a target family annotation from Pharos by clicking on the **grey square** in the first column of the **Fill Color** row. Alternatively and preferably, select all categories and press the right mouse button to color all of them via **Mapping Value Generators**.
 
-_<u>Question:</u>_  
+_<ins>Question:</ins>_  
 _How many of the proteins in the network are enzymes?_
 
 As expected, there are many transcription factors in the network. We can avoid counting them manually by creating a selection filter in the **Filter** tab (located underneath **Style**). Click the **ᐩ** button and choose **Column filter** from the drop-down menu. Then, find and select the attribute **(T) Node: family**. Write **transcription factor** in the text field to select all nodes with this annotation.
 
-_<u>Question:</u>_  
+_<ins>Question:</ins>_  
 _How many transcription factors are in the network?_
 
 ### 2.3 Data import
@@ -128,13 +128,13 @@ To import the node attributes file into Cytoscape, go to **File → Import → T
 
 Now, we want to color the nodes according to the logarithmic p-values from the Lisa analysis. From the left panel side menu, select **Style** (it is underneath **Network**). Then click on the **◀** button to the right of the property you want to change, for example **Border Paint** (here you need to set to default value of **Border Width** to e.g. 10). Next, set **Column** to the node column containing the data that you want to use (lpval). Since this is a numeric value, we will use the **Continuous Mapping** as the **Mapping Type**, and set a color gradient for how abundant each protein is. The default Cytoscape color gradient already gives a nice visualization of the significance.
 
-_<u>Questions:</u>_  
+_<ins>Questions:</ins>_  
 _Are the most significant nodes grouped together?_  
 _Do you see any issues with the color gradient when using the original `pval` values?_
 
 To change the colors, double click on the color gradient in order to bring up the **Continuous Mapping Editor** window and edit the colors for the continuous mapping. In the mapping editor dialog, the color that will be used for the minimum value is on the left, and the maximum is on the right. Double click on the triangles on the top and sides of the gradient to change the colors. The triangles on the top represent the values at which the data will be clipped; anything above the right triangle will be set to the max value. This is useful if you have a small number of values that are significantly higher than the median. As you move the triangles and change the color, the display in the network pane will automatically update -- this is all easier to do than to explain! If at any point it does not seem to work as expected, it is easiest to just delete the mapping and start again.
 
-_<u>Question:</u>_  
+_<ins>Question:</ins>_  
 _Can you improve the color mapping such that it is easier to see which nodes have a p-value below 0.001?_
 
 ### 2.5 Save session
@@ -149,7 +149,7 @@ In this exercise, we will focus on clustering, a common network analysis task, a
 
 Starting from the network in Exercise 2, we will use the MCL algorithm to identify clusters of tightly connected proteins within the network. To do that, press the **Cluster network (MCL)** button in the **STRING Results panel** on the right side of the network view. Keep the default **granularity parameter (inflation value)** set to **4** and click **OK** to start the clustering. The clusterMaker app will now run the algorithm and automatically create a network showing the clusters.
 
-_<u>Question:</u>_  
+_<ins>Question:</ins>_  
 _How many clusters have at least 10 nodes?_
 
 <details>
@@ -162,19 +162,19 @@ _How many clusters have at least 10 nodes?_
 
 We will work with the largest cluster in the network (it should be in the upper left corner). Select the nodes of this cluster by holding down the modifier key (Shift on Windows, Ctrl or Command on Mac) and then left-clicking and dragging to select multiple nodes. The nodes will turn yellow if they are selected properly. Then, create a new network by clicking on the **New Network from Selection** button and choosing the option **From Selected Nodes, All Edges** or via the menu item **File → New Network → From Selected Nodes, All Edges**.
 
-_<u>Question:</u>_    
+_<ins>Question:</ins>_    
 _How many nodes and edges are there in this cluster?_
 
 The cluster is very dense and almost fully connected, i.e. it has edges representing functional associations between almost all pairs of nodes. Change the network type to physical interactions by navigating to the **Edges tab** in the **STRING Results panel** and clicking the **Change network type** button. Leave the confidence cutoff at the default value, change the network type from **full STRING network** to **physical subnetwork** using the drop-down menu, and click **OK**. To better see the new set of edges, apply a layout of your choosing, e.g. the **yFiles Organic Layout**.
 
-_<u>Question:</u>_   
+_<ins>Question:</ins>_   
 _How many edges does the resulting network contain and why are there now fewer edges?_
 
 ### 3.3 Functional enrichment
 
 Next, we will retrieve functional enrichment for the proteins in our network of the largest cluster. After making sure that no nodes are selected in the network, go to the menu **Apps → STRING Enrichment → Retrieve functional enrichment** or use the **Functional Enrichment** button in the **Nodes tab** of the **STRING Panel** on the right side. Then, select the original, not clustered network ‘String Network’ as **Background** (instead of ‘genome’) and click **OK**. A new **STRING Enrichment tab** will appear in the **Table Panel** on the bottom. It contains a table of enriched terms and corresponding information for each enrichment category. You can see which proteins are annotated with a given term by selecting the term in the **STRING Enrichment panel** and you can see the terms annotating a given node by selecting it. You should find many of the expected terms, such as _DNA binding_.
 
-_<u>Question:</u>_   
+_<ins>Question:</ins>_   
 _How many statistically significant terms are in the table? Which is the most significant term for each of the categories GO Biological Process, GO Molecular Function, and KEGG Pathways? Hint: Look at the FDR (false discovery rate) value column and use the **Filter** button to select individual categories._
 
 <!-- To explore only specific types of terms, e.g. GO terms, and to remove redundant terms from the table, click on the filter icon in the **Table panel** (leftmost icon). Select the three types of GO terms, enable the option to **Remove redundant terms** and set **Redundancy cutoff** to 0.2. In this way, you will see only the statistically significant GO terms that do not represent largely the same set of proteins within the network. You can see which proteins are annotated with a given term by selecting the term in the **STRING Enrichment** panel.
@@ -202,7 +202,7 @@ We take the first cluster and filter for the proteins with the lowest p-values. 
 
 Save a picture of the network (**File → Export → Export to Image ...**)
 
-_<u>Question:</u>_   
+_<ins>Question:</ins>_   
 _Which are the most connected proteins (only physical interactions)?_  
 
 ### 4.2 Predicting Protein Dimers
@@ -213,7 +213,7 @@ Find the protein sequences in Uniprot. For that, search the gene name in [UniPro
 
 In the AlphaFold interface, select protein as molecule type before pasting the protein sequence. Then click on **Add entity** to add another protein sequence. Save the results and try to understand what they mean.
 
-_<u>Questions:</u>_   
+_<ins>Questions:</ins>_   
 _Why don't we predict the structures of single proteins? (Check the Uniprot entry again)_  
 _Note what you not about the respective positions of the proteins._
 
