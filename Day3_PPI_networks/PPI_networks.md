@@ -2,7 +2,7 @@
 
 ## Origin of material
 
-Most more these exercises has been adopted from [the StringApp exercises](https://jensenlab.org/training/stringapp/) made by Nadezhda T Doncheva and Lars J Jensen.
+Most more these exercises has been adopted from the [StringApp exercises](https://jensenlab.org/training/stringapp/) made by Nadezhda T Doncheva and Lars J Jensen.
 
 ## Learning objectives
 
@@ -222,13 +222,13 @@ _Note what you not about the respective positions of the proteins._
 
 The theoretical background for these exercises is covered in these short online lectures:
 
-[![STRING🎥]](https://youtu.be/o208DwyFbNk)
-[![Cytoscape](training_cytoscape.png)](https://youtu.be/Ohf9IPUJ82w)
-[![stringApp](training_stringapp.png)](https://youtu.be/MXmzXxNqmnI)
-[![stringApp tutorial](training_stringapp_tutorial.png)](https://youtu.be/kRQyPDMF_8k)
-[![DISEASES](training_diseases.png)](https://youtu.be/xkYixhO2CJQ)
-[![Enrichment analysis](training_enrichment_analysis.png)](https://youtu.be/2NC1QOXmc5o)
-[![stringApp enrichment analysis](training_stringapp_enrichment_analysis.png)](https://youtu.be/AUEyZw-iJHg)
+[🎥 STRING](https://youtu.be/o208DwyFbNk)  
+[🎥 Cytoscape](https://youtu.be/Ohf9IPUJ82w)  
+[🎥 stringApp](https://youtu.be/MXmzXxNqmnI)  
+[🎥 stringApp tutorial](https://youtu.be/kRQyPDMF_8k)  
+[🎥 DISEASES](https://youtu.be/xkYixhO2CJQ)  
+[🎥 Enrichment analysis](https://youtu.be/2NC1QOXmc5o)  
+[🎥 stringApp enrichment analysis](https://youtu.be/AUEyZw-iJHg)
 
 ## Supporting literature
 
