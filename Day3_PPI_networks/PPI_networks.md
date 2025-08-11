@@ -222,7 +222,7 @@ _Note what you not about the respective positions of the proteins._
 
 The theoretical background for these exercises is covered in these short online lectures:
 
-[![STRING](training_string.png)](https://youtu.be/o208DwyFbNk)
+[![STRING](🎥)](https://youtu.be/o208DwyFbNk)
 [![Cytoscape](training_cytoscape.png)](https://youtu.be/Ohf9IPUJ82w)
 [![stringApp](training_stringapp.png)](https://youtu.be/MXmzXxNqmnI)
 [![stringApp tutorial](training_stringapp_tutorial.png)](https://youtu.be/kRQyPDMF_8k)
