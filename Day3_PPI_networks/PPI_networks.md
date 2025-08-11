@@ -73,8 +73,9 @@ In this exercise, we will work with the obtained tables for the significant tran
 
 ### 2.1 Protein network retrieval
 
-Close the current session in Cytoscape from the menu **File → Close**. 
-TODO: Take on of the files and open it. You can choose how many of the most significant regulators you want to include (e.g. all with a p-value below 0.05).
+Close the current session in Cytoscape from the menu **File → Close**.  
+
+Take on of the files from your previous analys and open it to view the table (e.g. in Excel). For the following analysis, choose how many of the most significant regulators you want to include (e.g. all with a p-value below 0.05).
 
 Go to the menu **File → Import → Network from Public Databases**. In the import dialog, choose **STRING: protein query** as the **Data Source** and paste the list of gene names of the regulators in the table (column `factor`) into the **Enter protein names or identifiers** field. Make sure that the option **maximum additional interactors** is set to **0** before pressing the **Import** button. 
 
