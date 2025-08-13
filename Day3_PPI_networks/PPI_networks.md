@@ -69,7 +69,7 @@ The types of queries described above can alternatively be performed through the 
 
 ## Exercise 2: Continuing Your Main Investigation
 
-In this exercise, we will work with the obtained tables for the significant transcription factors. Find them [here](TODO) in case you want to start with the original data.
+In this exercise, we will work with the obtained tables for the significant transcription factors. Find them [here](https://github.com/oercompbiomed/Seili-2025/tree/main/RNAseq_backup_files) in case you want to start with the original data.
 
 ### 2.1 Protein network retrieval
 
